@@ -1,0 +1,77 @@
+<?php
+
+/**
+ * Implementation of hook_schema().
+ */
+
+function music_contact_us_schema()
+{
+  $schema['music_contact_us'] = array(
+    'description' => 'Music contact us form information.',
+
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier for a custom data.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE
+      ),
+
+      'first_name' => array(
+        'description' => 'First name',
+        'type' => 'varchar',
+        'length' => '100',
+        'not null' => FALSE
+      ),
+
+      'last_name' => array(
+        'description' => 'Last name',
+        'type' => 'varchar',
+        'length' => '100',
+        'not null' => FALSE
+      ),
+
+      'email_id' => array(
+        'description' => 'Email Id',
+        'type' => 'varchar',
+        'length' => '100',
+        'not null' => FALSE
+      ),
+
+      'date_of_birth' => array(
+        'description' => 'date_of_birth',
+        'type' => 'varchar',
+        'length' => '100',
+        'not null' => FALSE
+      ),
+
+      'phone_no' => array(
+        'description' => 'phone_no',
+        'type' => 'varchar',
+        'length' => '100',
+        'not null' => FALSE
+      ),
+
+      'country' => array(
+        'description' => 'country',
+        'type' => 'varchar',
+        'length' => '100',
+        'not null' => FALSE
+      ),
+
+      'query' => array(
+        'description' => 'query',
+        'type' => 'text',
+        'size' => 'big',
+        'not null' => FALSE,
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}
+
+function music_contact_us_uninstall()
+{
+  drupal_uninstall_schema('music_contact_us');
+}

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains music_contact_us.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function music_contact_us_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the music_contact_us module.
+    case 'help.page.music_contact_us':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Contact us form for music site.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function music_contact_us_theme() {
+  return [
+    'music_contact_us' => [
+      'render element' => 'children',
+    ],
+  ];
+}

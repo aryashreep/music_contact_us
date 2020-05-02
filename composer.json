@@ -1,0 +1,16 @@
+{
+    "name": "music_contact_us",
+    "type": "drupal-custom-module",
+    "description": "Drupal 8 module for contact us.",
+    "homepage": "https://github.com/aryashreep/music_contact_us",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "authors": [
+      {
+        "name": "Aryashree Pritikrishna (aryashreep)",
+        "homepage": "https://www.drupal.org/u/aryashreep",
+        "role": "Maintainer"
+      }
+    ],
+    "require": {}
+}

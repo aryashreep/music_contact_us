@@ -1,0 +1,14 @@
+music_contact_us.music_contact_us_form:
+  path: '/music_contact_us'
+  defaults:
+    _form: '\Drupal\music_contact_us\Form\MusicContactUsForm'
+    _title: 'Contact Us'
+  requirements:
+    _access: 'TRUE'
+music_contact_us.getdetails:
+ path: '/getdetails'
+ defaults:
+   _title: 'Detail of entries'
+   _controller: '\Drupal\music_contact_us\Controller\MusicContactUsController::getDetails'
+ requirements:
+    _permission: 'access content'

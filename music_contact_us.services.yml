@@ -1,0 +1,7 @@
+services:
+  logger.channel.music_contact_us:
+    parent: logger.channel_base
+    arguments: ['music_contact_us']
+  music_contact_us.default:
+    class: Drupal\music_contact_us\MusicContactUsFormService
+    arguments: ['@database', '@current_user', '@email.validator', '@country_manager']
