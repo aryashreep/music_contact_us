@@ -52,5 +52,5 @@ jobs:
     - name: Code review initiated
       run: |
         ls -l
-        ~/.composer/vendor/bin/phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --ignore=node_modules,bower_components,vendor ./
-        ~/.composer/vendor/bin/phpcs --standard=DrupalPractice --php,module,inc,install,test,profile,theme,css,info,txt,md,yml --ignore=node_modules,bower_components,vendor ./    
+        ~/.composer/vendor/bin/phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --ignore=node_modules,bower_components,vendor,*.install ./
+        ~/.composer/vendor/bin/phpcs --standard=DrupalPractice --php,module,inc,install,test,profile,theme,css,info,txt,md,yml --ignore=node_modules,bower_components,vendor,*.install ./    
