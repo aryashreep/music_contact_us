@@ -159,7 +159,7 @@ class MusicContactUsForm extends FormBase {
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
-    foreach ($form_state->getValues() as $key => $value) {
+    foreach ($form_state->getValues() as $value) {
       // @TODO: Validate fields.
       if (strlen($form_state->getValue('phone_no')) < 3) {
         $form_state->setErrorByName('phone_no', $this->t('The phone number is too short. Please enter a full phone number.'));

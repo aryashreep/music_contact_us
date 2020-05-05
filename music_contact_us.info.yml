@@ -2,4 +2,5 @@ name: 'Music Contact Us'
 type: module
 description: 'Contact us form for music site.'
 core: 8.x
+core_version_requirement: ^8
 package: 'Custom'
