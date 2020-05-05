@@ -28,13 +28,6 @@ class MusicContactUsControllerTest extends WebTestBase {
   }
 
   /**
-   * {@inheritdoc}
-   */
-  public function setUp() {
-    parent::setUp();
-  }
-
-  /**
    * Tests music_contact_us functionality.
    */
   public function testMusicContactUsController() {
