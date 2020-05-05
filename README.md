@@ -1,7 +1,7 @@
 # Drupal 8 custom Contact Us
 custom contact us with dependency injection(DI).
 
-![D8 Code Review](https://github.com/aryashreep/music_contact_us/workflows/D8%20Code%20Review/badge.svg)
+![D8 Code Review](https://github.com/aryashreep/music_contact_us/workflows/D8%20Code%20Review/badge.svg?branch=master)
 
 # Module structure
 |- src
